@@ -3,12 +3,12 @@
    Properties
 {
 [PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
-_AlphaIntensity_Fade_1("_AlphaIntensity_Fade_1", Range(0, 3)) = 1
-_TintRGBA_Color_1("_TintRGBA_Color_1", COLOR) = (1,1,1,1)
-_AlphaIntensity_Fade_2("_AlphaIntensity_Fade_2", Range(0, 3)) = 1
-_TintRGBA_Color_2("_TintRGBA_Color_2", COLOR) = (1,1,1,1)
-_OperationBlend_Fade_1("_OperationBlend_Fade_1", Range(0, 1)) = 1
-_SpriteFade("SpriteFade", Range(0, 1)) = 1.0
+[HideInInspector]_AlphaIntensity_Fade_1("_AlphaIntensity_Fade_1", Range(0, 3)) = 1
+[HideInInspector]_TintRGBA_Color_1("_TintRGBA_Color_1", COLOR) = (1,1,1,1)
+[HideInInspector]_AlphaIntensity_Fade_2("_AlphaIntensity_Fade_2", Range(0, 3)) = 1
+[HideInInspector]_TintRGBA_Color_2("_TintRGBA_Color_2", COLOR) = (1,1,1,1)
+[HideInInspector]_OperationBlend_Fade_1("_OperationBlend_Fade_1", Range(0, 1)) = 1
+[HideInInspector]_SpriteFade("SpriteFade", Range(0, 1)) = 1.0
 
 // required for UI.Mask
 [HideInInspector]_StencilComp("Stencil Comparison", Float) = 8
