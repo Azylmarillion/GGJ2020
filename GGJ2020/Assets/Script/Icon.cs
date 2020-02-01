@@ -2,13 +2,19 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class ImageIcon : MonoBehaviour
+public class Icon : MonoBehaviour
 {
     [SerializeField] private Window _windowPrefab = null;
+    [SerializeField] IconSprites sprites = null;
 
     public Sprite associatedSprite { get; private set; }
 
-    public void SetSprite(Sprite toAttach)
+    private void Start()
+    {
+        GetComponent<Image>().sprite = sprites.list[TimeShifter.era];
+    }
+
+    public void SetAttachedSprite(Sprite toAttach)
     {
         associatedSprite = toAttach;
     }
@@ -19,3 +25,4 @@ public class ImageIcon : MonoBehaviour
         instance.GetComponent<Image>().sprite = associatedSprite;
     }
 }
+

@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CloseButton : MonoBehaviour
 {
+    [SerializeField] private CloseButtonSprites _sprites = null;
 
     public void Start()
     {
-        PlaceCloseButton();       
+        GetComponent<Image>().sprite = _sprites.list[TimeShifter.era];
+        PlaceCloseButton();
     }
 
     public void OnClick()

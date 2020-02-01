@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Window : MonoBehaviour
 {
+    [SerializeField] private WindowSprites _sprites = null;
+
     private void Start()
     {
+        GetComponent<Image>().sprite = _sprites.list[TimeShifter.era];
         PlaceWindowRandomly();       
     }
 

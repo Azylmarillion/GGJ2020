@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -98,7 +98,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.544104, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -148,9 +148,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _windowPrefab: {fileID: 7993144496754014247, guid: e3319d21252ec8744b94cfaedda92323,
     type: 3}
-  _imageIconPrefab: {fileID: 3079422691542004738, guid: b9d52d98fd3c9894aa338116781f9913,
+  _imgIconPrefab: {fileID: 3079422691542004738, guid: b9d52d98fd3c9894aa338116781f9913,
     type: 3}
-  _imageInside: []
+  _txtIconPrefab: {fileID: 6323360062424818860, guid: 4ab77e7b19a2d2d4d9d7d875b21220b4,
+    type: 3}
+  _folderSprites: {fileID: 11400000, guid: ce3697736539544439236fe1d8507d9b, type: 2}
+  _imgEgyptContent: []
+  _imgRenaissanceContent: []
+  _imgSamouraiContent: []
+  _imgHackermanContent: []
+  _txtEgyptContent: []
+  _txtRenaissanceContent: []
+  _txtSamouraiContent: []
+  _txtHackermanContent: []
 --- !u!1 &7401193045578357948
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7401193045578357949
 RectTransform:
   m_ObjectHideFlags: 0
