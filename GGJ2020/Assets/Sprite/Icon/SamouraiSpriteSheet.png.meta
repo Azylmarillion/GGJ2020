@@ -25,7 +25,7 @@ TextureImporter:
     second: samouraiClose
   - first:
       213: 3060109550041844902
-    second: samouraiIcon
+    second: samouraiPointer
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -206,7 +206,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: samouraiIcon
+      name: samouraiPointer
       rect:
         serializedVersion: 2
         x: 1578
