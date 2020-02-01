@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EditorNeon : MonoBehaviour
 {
     #region F/P
-    [SerializeField]
+    [SerializeField, Space]
     Image image = null;
 
     [SerializeField, Space]
