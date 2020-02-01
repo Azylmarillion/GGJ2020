@@ -10,7 +10,8 @@ public class Window : ChangeOnTimeShift
     private void Start()
     {
         GetComponent<Image>().sprite = _sprites.list[TimeShifter.era];
-        PlaceWindowRandomly();       
+        PlaceWindowRandomly();
+        GetComponent<SoundRandomiser>().Play();
     }
 
     private void PlaceWindowRandomly()

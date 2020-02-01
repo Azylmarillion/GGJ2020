@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CloseButton : MonoBehaviour
 {
     [SerializeField] private CloseButtonSprites _sprites = null;
+    [SerializeField] private SoundRandomiser _prefab = null;
 
     public void Start()
     {
@@ -15,6 +16,8 @@ public class CloseButton : MonoBehaviour
 
     public void OnClick()
     {
+        SoundRandomiser instance = Instantiate(_prefab);
+        instance.Play();
         Destroy(transform.parent.gameObject);
     }
 

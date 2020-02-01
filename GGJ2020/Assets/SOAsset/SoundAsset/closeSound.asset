@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 032418f9472038442b44374b3d0f9eef, type: 3}
+  m_Name: closeSound
+  m_EditorClassIdentifier: 
+  _egypt: {fileID: 0}
+  _pitchEgypt: {x: 0.85, y: 1.15}
+  _volumeEgypt: {x: 0.9, y: 1}
+  _renaissance: {fileID: 0}
+  _pitchRenaissance: {x: 0.85, y: 1.15}
+  _volumeRenaissance: {x: 0.9, y: 1}
+  _samourai: {fileID: 0}
+  _pitchSamourai: {x: 0.85, y: 1.15}
+  _volumeSamourai: {x: 0.9, y: 1}
+  _hackerman: {fileID: 0}
+  _pitchHackerman: {x: 0.85, y: 1.15}
+  _volumeHackerman: {x: 0.9, y: 1}
