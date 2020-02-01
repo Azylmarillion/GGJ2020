@@ -89,7 +89,6 @@ public class DigitalGlitch : MonoBehaviour
         {
             SetUpResources();
 
-            // Update trash frames on a constant interval.
             var fcount = Time.frameCount;
             if (fcount % 13 == 0) Graphics.Blit(source, _trashFrame1);
             if (fcount % 73 == 0) Graphics.Blit(source, _trashFrame2);

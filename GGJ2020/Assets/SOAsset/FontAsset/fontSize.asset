@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d0ce13301716c49a2183a8b975c6ac, type: 3}
   m_Name: fontSize
   m_EditorClassIdentifier: 
-  _egypt: 36
-  _renaissance: 36
+  _egypt: 64
+  _renaissance: 54
   _samourai: 36
   _hackerman: 18
