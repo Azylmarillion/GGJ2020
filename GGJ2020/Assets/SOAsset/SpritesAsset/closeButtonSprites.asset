@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e5a7becd507694f86e3efaf187ff6a, type: 3}
   m_Name: closeButtonSprites
   m_EditorClassIdentifier: 
-  _egypt: {fileID: 0}
-  _renaissance: {fileID: 0}
-  _samourai: {fileID: 0}
-  _hackerman: {fileID: 21300000, guid: d5d31c15cd1ef5640bc20719a0c86a31, type: 3}
+  _egypt: {fileID: 5414745431699684203, guid: bc933c3662dd2174cb936071d46d8771, type: 3}
+  _renaissance: {fileID: 704840129475828601, guid: b784e2980ac56ed4b8262778cb033649,
+    type: 3}
+  _samourai: {fileID: 6467782804810971365, guid: 8ffc4a2a4d4ed614e8618b6414ee84dc,
+    type: 3}
+  _hackerman: {fileID: 8695890785559191359, guid: 5f79031345a3b8446bf56fad70791a1d,
+    type: 3}

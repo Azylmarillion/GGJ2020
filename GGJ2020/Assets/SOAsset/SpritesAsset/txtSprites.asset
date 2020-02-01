@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02816497e96fe6b4285ae921d85dd241, type: 3}
   m_Name: txtSprites
   m_EditorClassIdentifier: 
-  _egypt: {fileID: 0}
-  _renaissance: {fileID: 0}
-  _samourai: {fileID: 0}
-  _hackerman: {fileID: 21300000, guid: a75d392f0e5b1da4997bd48d94ae3331, type: 3}
+  _egypt: {fileID: -8225366857001928848, guid: bc933c3662dd2174cb936071d46d8771, type: 3}
+  _renaissance: {fileID: -3914024231850849669, guid: b784e2980ac56ed4b8262778cb033649,
+    type: 3}
+  _samourai: {fileID: 798180782345839667, guid: 8ffc4a2a4d4ed614e8618b6414ee84dc,
+    type: 3}
+  _hackerman: {fileID: 8673995603783848854, guid: 5f79031345a3b8446bf56fad70791a1d,
+    type: 3}

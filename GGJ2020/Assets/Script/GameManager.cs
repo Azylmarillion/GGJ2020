@@ -5,13 +5,13 @@ public class GameManager : MonoBehaviour
 {
     private TimeShifter timeShifter;
     
-    void Awake()
+    void Start()
     {
         timeShifter = new TimeShifter();
     }
 
-    void Update()
+    public void ChangeEra(int newEra)
     {
-
+        timeShifter.ChangeEra((Era)newEra);
     }
 }

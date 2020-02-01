@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75ef9cb47bed3148b31648db0e5a0a9, type: 3}
   m_Name: windowSprites
   m_EditorClassIdentifier: 
-  _egypt: {fileID: 0}
-  _renaissance: {fileID: 0}
-  _samourai: {fileID: 0}
-  _hackerman: {fileID: 0}
+  _egypt: {fileID: -437713025476102265, guid: bc933c3662dd2174cb936071d46d8771, type: 3}
+  _renaissance: {fileID: 21300000, guid: d3bb3fbe81dd34744bed9956afa799ab, type: 3}
+  _samourai: {fileID: 21300000, guid: dbefe4b07bc99a14da1bf1cb7b7cf3ef, type: 3}
+  _hackerman: {fileID: 8458817245680092726, guid: 64ef188e43abdb941b5084bdc2391738,
+    type: 3}

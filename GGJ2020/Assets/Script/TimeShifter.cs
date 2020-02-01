@@ -13,9 +13,11 @@ public class TimeShifter
     public void ChangeEra(Era newEra)
     {
         _currentEra = newEra;
-        FolderIcon[] folders = Object.FindObjectsOfType<FolderIcon>();
-
+        foreach (var obj in Object.FindObjectsOfType<ChangeOnTimeShift>())
+            obj.OnTimeShift();
     }
+
+    
 }
 
 public enum Era

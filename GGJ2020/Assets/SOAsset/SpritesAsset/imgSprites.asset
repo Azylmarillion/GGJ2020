@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02816497e96fe6b4285ae921d85dd241, type: 3}
   m_Name: imgSprites
   m_EditorClassIdentifier: 
-  _egypt: {fileID: 0}
-  _renaissance: {fileID: 0}
-  _samourai: {fileID: 0}
-  _hackerman: {fileID: 21300000, guid: d1ba7f16e02aa054284f0ad86fc93a49, type: 3}
+  _egypt: {fileID: -808208941178096726, guid: bc933c3662dd2174cb936071d46d8771, type: 3}
+  _renaissance: {fileID: -4330521886890471461, guid: b784e2980ac56ed4b8262778cb033649,
+    type: 3}
+  _samourai: {fileID: 7527574780362121930, guid: 8ffc4a2a4d4ed614e8618b6414ee84dc,
+    type: 3}
+  _hackerman: {fileID: 7391680283241487632, guid: 5f79031345a3b8446bf56fad70791a1d,
+    type: 3}

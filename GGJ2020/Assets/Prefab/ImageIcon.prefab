@@ -65,8 +65,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -131,8 +129,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &3079422691542004738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,4 +143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _windowPrefab: {fileID: 7993144496754014247, guid: e3319d21252ec8744b94cfaedda92323,
     type: 3}
-  sprites: {fileID: 11400000, guid: f19aec496d81b79499ceede45fbdb7da, type: 2}
+  _sprites: {fileID: 11400000, guid: f19aec496d81b79499ceede45fbdb7da, type: 2}
+  _fonts: {fileID: 11400000, guid: 532ec44138687fd41afb3ce3f8e41550, type: 2}
+  _fontSizes: {fileID: 11400000, guid: e6ca2b2acd9c85640b3896ce84293f19, type: 2}
