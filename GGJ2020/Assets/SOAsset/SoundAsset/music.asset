@@ -14,9 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _egyptIntro: {fileID: 8300000, guid: f044ea5884357d44eb7aa9e6d3b59000, type: 3}
   _egyptMain: {fileID: 8300000, guid: 2e4872a05bad2014795b62485fb8a89b, type: 3}
+  _egyptVolume: 1
   _renaissanceIntro: {fileID: 8300000, guid: ada74e54de5189447baaead981edd605, type: 3}
   _renaissanceMain: {fileID: 8300000, guid: 6de89570bad8fab4f906485d1bbf9f25, type: 3}
+  _renaissanceVolume: 1
   _samouraiIntro: {fileID: 8300000, guid: 0baa89942987edf4da65effe98bebcf4, type: 3}
   _samouraiMain: {fileID: 8300000, guid: cb00faad72add2c4ca4b7edf800fb7aa, type: 3}
+  _samouraiVolume: 1
   _hackermanIntro: {fileID: 0}
   _hackermanMain: {fileID: 8300000, guid: 7cfc62fa36f29964fa549ea958e4fa0e, type: 3}
+  _hackermanVolume: 0.625

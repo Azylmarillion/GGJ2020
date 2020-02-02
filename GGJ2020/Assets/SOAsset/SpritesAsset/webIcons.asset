@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02816497e96fe6b4285ae921d85dd241, type: 3}
+  m_Name: webIcons
+  m_EditorClassIdentifier: 
+  _egypt: {fileID: 0}
+  _renaissance: {fileID: -3771699352681627225, guid: b784e2980ac56ed4b8262778cb033649,
+    type: 3}
+  _samourai: {fileID: 0}
+  _hackerman: {fileID: 7608240375179178359, guid: 5f79031345a3b8446bf56fad70791a1d,
+    type: 3}
