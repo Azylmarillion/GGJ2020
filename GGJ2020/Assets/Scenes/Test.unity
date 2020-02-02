@@ -120,6 +120,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &96642644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96642645}
+  - component: {fileID: 96642646}
+  m_Layer: 0
+  m_Name: CursorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &96642645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96642644}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 666809484}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &96642646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96642644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b4037cd1f8031c45a99f073f0c58acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointerSpritesCollection: {fileID: 11400000, guid: 733da7a3e357bc84fb3596e21a0cbe94,
+    type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +255,58 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1675202127}
     m_Modifications:
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgHackermanContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgSamouraiContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtSamouraiContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgRenaissanceContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgEgyptContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgSamouraiContent.Array.data[0]
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgHackermanContent.Array.data[0]
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtSamouraiContent.Array.data[0]
+      value: "\u201CThe password to process further investigation is concealed in
+        the medieval cards. If you are authorized to access further database, you
+        can now open these cards.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgRenaissanceContent.Array.data[0]
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgEgyptContent.Array.data[0]
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7401193045508387670, guid: 43caa39d2ec195240a9db186cd89d49f,
         type: 3}
       propertyPath: m_Name
@@ -320,60 +417,40 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgHackermanContent.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgSamouraiContent.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtSamouraiContent.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgRenaissanceContent.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgEgyptContent.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgSamouraiContent.Array.data[0]
-      value: 
-      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgHackermanContent.Array.data[0]
-      value: 
-      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtSamouraiContent.Array.data[0]
-      value: "\u201CThe password to process further investigation is concealed in
-        the medieval cards. If you are authorized to access further database, you
-        can now open these cards.\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgRenaissanceContent.Array.data[0]
-      value: 
-      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgEgyptContent.Array.data[0]
-      value: 
-      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43caa39d2ec195240a9db186cd89d49f, type: 3}
+--- !u!1 &666809483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 666809484}
+  m_Layer: 0
+  m_Name: Logique
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &666809484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666809483}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.2795315, y: 3.8839064, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1660592326}
+  - {fileID: 96642645}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &824009142
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,12 +652,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660592324}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 365.0344, y: 401.84674, z: -89.0312}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 370.31393, y: 397.96283, z: -89.0312}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 666809484}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1675202123
 GameObject:
@@ -691,6 +768,112 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1675202127}
     m_Modifications:
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgHackermanContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtHackermanContent.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtRenaissanceContent.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgRenaissanceContent.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgSamouraiContent.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtEgyptContent.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtSamouraiContent.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgHackermanContent.Array.data[0]
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtHackermanContent.Array.data[0]
+      value: some text
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtRenaissanceContent.Array.data[0]
+      value: wesh wesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgRenaissanceContent.Array.data[0]
+      value: 
+      objectReference: {fileID: -3771699352681627225, guid: b784e2980ac56ed4b8262778cb033649,
+        type: 3}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtRenaissanceContent.Array.data[1]
+      value: wesh wesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtRenaissanceContent.Array.data[2]
+      value: wesh wesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtRenaissanceContent.Array.data[3]
+      value: wesh wesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtEgyptContent.Array.data[0]
+      value: oidgthjeroihgnj
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtEgyptContent.Array.data[1]
+      value: oignjoerijn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtEgyptContent.Array.data[2]
+      value: oijgroirezjn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtSamouraiContent.Array.data[0]
+      value: eoignjoie
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtSamouraiContent.Array.data[1]
+      value: oeijgoiej
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtSamouraiContent.Array.data[2]
+      value: oejgoiejpo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: containPasswordExe
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7401193045508387670, guid: 43caa39d2ec195240a9db186cd89d49f,
         type: 3}
       propertyPath: m_Name
@@ -801,112 +984,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgHackermanContent.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtHackermanContent.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtRenaissanceContent.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgRenaissanceContent.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgSamouraiContent.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtEgyptContent.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtSamouraiContent.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgHackermanContent.Array.data[0]
-      value: 
-      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtHackermanContent.Array.data[0]
-      value: some text
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtRenaissanceContent.Array.data[0]
-      value: wesh wesh
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgRenaissanceContent.Array.data[0]
-      value: 
-      objectReference: {fileID: -3771699352681627225, guid: b784e2980ac56ed4b8262778cb033649,
-        type: 3}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtRenaissanceContent.Array.data[1]
-      value: wesh wesh
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtRenaissanceContent.Array.data[2]
-      value: wesh wesh
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtRenaissanceContent.Array.data[3]
-      value: wesh wesh
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtEgyptContent.Array.data[0]
-      value: oidgthjeroihgnj
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtEgyptContent.Array.data[1]
-      value: oignjoerijn
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtEgyptContent.Array.data[2]
-      value: oijgroirezjn
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtSamouraiContent.Array.data[0]
-      value: eoignjoie
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtSamouraiContent.Array.data[1]
-      value: oeijgoiej
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtSamouraiContent.Array.data[2]
-      value: oejgoiejpo
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: containPasswordExe
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7401193045578357949, guid: 43caa39d2ec195240a9db186cd89d49f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -926,6 +1003,69 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1675202127}
     m_Modifications:
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtHackermanContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgSamouraiContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtRenaissanceContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtEgyptContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgEgyptContent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: containPasswordExe
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtHackermanContent.Array.data[0]
+      value: "\u201CSend to Smith tomorrow morning  M.Smith,  I need to remind you
+        that parking your car in our main hall can not be justified by  your hobby
+        of \u201Cfighting the crime\u201D or whatever you call it. Moreover, your
+        scout club membership card is not a valid document to get a discount on cafetaria
+        sweets. The next incident (if I am not mistaken it\u2019s the twelfth this
+        week) will result in an official convocation in my office and the immediate
+        termination of your work contract.   Truly yours,\u201D "
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgSamouraiContent.Array.data[0]
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtRenaissanceContent.Array.data[0]
+      value: "\u201CThe password to process further investigation is concealed in
+        the medieval cards. If you are authorized to access further database, you
+        can now open these cards.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _txtEgyptContent.Array.data[0]
+      value: Lorem Ipsum.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
+        type: 3}
+      propertyPath: _imgEgyptContent.Array.data[0]
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7401193045508387670, guid: 43caa39d2ec195240a9db186cd89d49f,
         type: 3}
       propertyPath: m_Name
@@ -1036,69 +1176,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtHackermanContent.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgSamouraiContent.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtRenaissanceContent.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtEgyptContent.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgEgyptContent.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: containPasswordExe
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtHackermanContent.Array.data[0]
-      value: "\u201CSend to Smith tomorrow morning  M.Smith,  I need to remind you
-        that parking your car in our main hall can not be justified by  your hobby
-        of \u201Cfighting the crime\u201D or whatever you call it. Moreover, your
-        scout club membership card is not a valid document to get a discount on cafetaria
-        sweets. The next incident (if I am not mistaken it\u2019s the twelfth this
-        week) will result in an official convocation in my office and the immediate
-        termination of your work contract.   Truly yours,\u201D "
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgSamouraiContent.Array.data[0]
-      value: 
-      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtRenaissanceContent.Array.data[0]
-      value: "\u201CThe password to process further investigation is concealed in
-        the medieval cards. If you are authorized to access further database, you
-        can now open these cards.\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _txtEgyptContent.Array.data[0]
-      value: Lorem Ipsum.
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401193045508387668, guid: 43caa39d2ec195240a9db186cd89d49f,
-        type: 3}
-      propertyPath: _imgEgyptContent.Array.data[0]
-      value: 
-      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43caa39d2ec195240a9db186cd89d49f, type: 3}
 --- !u!224 &2124598590 stripped

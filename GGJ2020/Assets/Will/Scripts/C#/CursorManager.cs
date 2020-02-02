@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class CursorManager : ChangeOnTimeShift
 {
@@ -11,13 +8,26 @@ public class CursorManager : ChangeOnTimeShift
 
     #endregion
 
-    void Start()
-    {
-        //GetComponent<Texture2D>(). = pointerSpritesCollection.list[TimeShifter.era];
-    }
-
+    #region Meths
+    #region MyMeths
+    #endregion
+    #region HeritageMeths
     public override void OnTimeShift()
     {
-
+        if (pointerSpritesCollection == null)
+        {
+            Debug.Log("need pointersCollection script");
+            return;
+        }
+            Cursor.SetCursor(pointerSpritesCollection.list[TimeShifter.era], Vector2.zero, CursorMode.ForceSoftware);
+        
     }
+    #endregion
+    #region UnityMeths.
+    void Start()
+    {        
+        
+    }
+    #endregion
+    #endregion
 }
