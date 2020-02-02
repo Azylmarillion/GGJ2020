@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -401, y: 275}
+  m_AnchoredPosition: {x: 44, y: 77}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1169025615
@@ -175,11 +175,11 @@ MonoBehaviour:
   firstColor: {r: 1, g: 0, b: 0.9644861, a: 1}
   firstGlowIntensity: 0
   enablePulseFirstGlow: 0
-  maxPulseIntensityFirstGlow: 0.7
+  maxPulseIntensityFirstGlow: 0
   secondColor: {r: 1, g: 0.6938923, b: 0, a: 1}
   secondGlowIntensity: 0
   enablePulseSecondGlow: 0
-  maxPulseIntensitySecondGlow: 0.74
+  maxPulseIntensitySecondGlow: 1.5
   speedPulse: 0.916
   colorBlend: 1
 --- !u!114 &1169025616
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1361333193}
+  m_Material: {fileID: 1338469837}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -218,7 +218,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169025613}
   m_CullTransparentMesh: 0
---- !u!21 &1361333193
+--- !u!21 &1338469837
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a3a070408aa941ab83ae10be1708848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _intensity: 0.38
+  _intensity: 0
   _shader: {fileID: 4800000, guid: ba40dc630e1d9417cb9ea22586ece1e1, type: 3}
 --- !u!114 &1664956788
 MonoBehaviour:
@@ -351,10 +351,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870b9a8f0f82f4f56800cc427bcd1025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scanLineJitter: 0.55
-  _verticalJump: 0.55
-  _horizontalShake: 0.55
-  _colorDrift: 0.55
+  _scanLineJitter: 0
+  _verticalJump: 0
+  _horizontalShake: 0
+  _colorDrift: 0
   _shader: {fileID: 4800000, guid: da33272284ea24f208f36998880990be, type: 3}
 --- !u!81 &1664956789
 AudioListener:

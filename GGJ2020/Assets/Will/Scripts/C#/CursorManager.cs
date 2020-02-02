@@ -13,7 +13,7 @@ public class CursorManager : ChangeOnTimeShift
 
     void Start()
     {
-        
+        //GetComponent<Texture2D>(). = pointerSpritesCollection.list[TimeShifter.era];
     }
 
     public override void OnTimeShift()
