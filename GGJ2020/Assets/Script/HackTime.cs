@@ -10,10 +10,10 @@ public class HackTime : ChangeOnTimeShift
     [SerializeField] private FontSizeCollection _fontSize = null;
     [SerializeField] private int _idxStep = 0;
     [SerializeField] private float successPercentage = 0;
+    [SerializeField] private TextAsset _hackText = null;
 
-    private HackText hackText = new HackText();
     private TextMeshProUGUI text;
-    int maxIdx = 100;
+    int maxIdx = 0;
     int currentIdx = 0;
     int desiredIdx = 0;
     private bool transitionStarted;
@@ -30,36 +30,49 @@ public class HackTime : ChangeOnTimeShift
         text.fontSize = _fontSize.list[TimeShifter.era];
         currentIdx = 0;
         desiredIdx = 0;
+        maxIdx = _hackText.text.Length - 10;
         transitionStarted = false;
     }
 
     public void Update()
     {
-        if(currentIdx > maxIdx && !transitionStarted)
-        {
-            transitionStarted = true;
-            GlitchTransition();
-        }
+        text.text = "#it's hack time! \n" + _hackText.text.Substring(0, currentIdx);
         if (Input.anyKeyDown)
         {
             desiredIdx += _idxStep;
             StartCoroutine(WriteHackText());
-        }
-        text.text = "#it's hack time! \n" + hackText.text.Substring(0, currentIdx);
-    }
-
-    private void GlitchTransition()
-    {
-        Camera.main.GetComponent<GlitchTransition>().Glitch();
+        }       
     }
 
     private IEnumerator WriteHackText()
     {
-        while(currentIdx <= desiredIdx)
+        if (currentIdx >= maxIdx)
         {
-            if(UnityEngine.Random.Range(0.0f, 1.0f) < successPercentage)
-                currentIdx++;
+            currentIdx = maxIdx;
             yield return null;
         }
+
+        while(currentIdx <= desiredIdx)
+        {
+            if (currentIdx > maxIdx)
+            {
+                yield return null;
+                currentIdx = maxIdx;
+            }
+            if(UnityEngine.Random.Range(0.0f, 1.0f) < successPercentage)
+                currentIdx++;
+            if (currentIdx == maxIdx && !transitionStarted)
+            {
+                transitionStarted = true;              
+                GlitchTransition();
+            }
+            yield return null;
+        }
+    }
+
+    private void GlitchTransition()
+    {
+        StopAllCoroutines();
+        Camera.main.GetComponent<GlitchTransition>().Glitch();
     }
 }
