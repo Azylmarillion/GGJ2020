@@ -10,10 +10,16 @@ public class GameManager : MonoBehaviour
         timeShifter = new TimeShifter();
     }
 
+    public void ChangeEra()
+    {
+        timeShifter.ChangeEra((Era)(TimeShifter.era - 1));
+    }
+
     public void ChangeEra(int newEra)
     {
         timeShifter.ChangeEra((Era)newEra);
     }
+
 
     private void Update()
     {

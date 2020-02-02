@@ -509,12 +509,12 @@ PrefabInstance:
     - target: {fileID: 1280597325775716572, guid: a5078fa125533d74f99650d087020389,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1280597325775716572, guid: a5078fa125533d74f99650d087020389,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1280597325775716572, guid: a5078fa125533d74f99650d087020389,
         type: 3}
@@ -546,6 +546,12 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1280597325775716573, guid: a5078fa125533d74f99650d087020389,
+        type: 3}
+      propertyPath: _prefabSoundRandomiser
+      value: 
+      objectReference: {fileID: 6031556992142742322, guid: c338fc168995ccb4d952fccb8e3a8c56,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5078fa125533d74f99650d087020389, type: 3}
 --- !u!224 &7993144495888834412 stripped
