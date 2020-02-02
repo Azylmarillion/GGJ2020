@@ -9,6 +9,7 @@ public class FolderIcon: ChangeOnTimeShift
     [SerializeField] private Window _windowPrefab = null;
     [SerializeField] private Icon _imgIconPrefab = null;
     [SerializeField] private Icon _txtIconPrefab = null;
+    [SerializeField] private WebIcon _webIconPrefab = null;
     [SerializeField] private PasswordIcon _passwordIconPrefab = null;
     [SerializeField] private FolderSprites _folderSprites = null;
     [SerializeField] private List<Sprite> _imgEgyptContent = null;
@@ -20,6 +21,7 @@ public class FolderIcon: ChangeOnTimeShift
     [SerializeField] private List<string> _txtSamouraiContent = null;
     [SerializeField] private List<string> _txtHackermanContent = null;
     [SerializeField] private List<bool> containPasswordExe = null;
+    [SerializeField] private bool containWebIcon = false;
 
     private List<List<Sprite>> _imgContent = null;
     private List<List<string>> _txtContent = null;
@@ -105,6 +107,27 @@ public class FolderIcon: ChangeOnTimeShift
 
             currentIcon++;
         }
+
+        //Place web icon
+        if (containWebIcon)
+        {
+            WebIcon iconInstance = Instantiate(_webIconPrefab, instance.transform);
+            RectTransform iconRect = iconInstance.GetComponent<RectTransform>();
+            Vector3 spawnPos = new Vector3(
+                -instanceRect.width / 2 + iconRect.rect.width / 2 + margin,
+                instanceRect.height / 2 - iconRect.rect.height / 2,
+                0) * scale
+                + new Vector3(
+                    (currentIcon % 2) * iconRect.rect.width,
+                    -(currentIcon / 2) * iconRect.rect.height,
+                    0);
+            iconRect.localPosition = spawnPos;
+
+            currentIcon++;
+        }
+
+
+
     }
 }
 

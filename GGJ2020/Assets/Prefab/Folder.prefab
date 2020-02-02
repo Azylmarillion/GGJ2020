@@ -147,6 +147,8 @@ MonoBehaviour:
     type: 3}
   _txtIconPrefab: {fileID: 6323360062424818860, guid: 4ab77e7b19a2d2d4d9d7d875b21220b4,
     type: 3}
+  _webIconPrefab: {fileID: 3377820899752372046, guid: 15c7df72f5c84ff408c50e585ff6cdbb,
+    type: 3}
   _passwordIconPrefab: {fileID: 2247360139149344698, guid: 212da32daf826bf408999da9ad434f86,
     type: 3}
   _folderSprites: {fileID: 11400000, guid: ce3697736539544439236fe1d8507d9b, type: 2}
@@ -158,4 +160,5 @@ MonoBehaviour:
   _txtRenaissanceContent: []
   _txtSamouraiContent: []
   _txtHackermanContent: []
-  containPasswordExe: 0
+  containPasswordExe: 
+  containWebIcon: 
