@@ -36,7 +36,7 @@ public class EditorNeon : MonoBehaviour
     [SerializeField, Range(0, 3), Space]
     float maxPulseIntensitySecondGlow;
 
-    [SerializeField, Range(0, 1), Space]
+    [SerializeField, Range(0, 3), Space]
     float speedPulse = .5f;
 
     [SerializeField, Range(0, 1), Space]
