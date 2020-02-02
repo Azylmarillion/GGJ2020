@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimeShifter
 {
@@ -12,6 +13,8 @@ public class TimeShifter
 
     public void ChangeEra(Era newEra)
     {
+        if (newEra == Era.EndScene)
+            SceneManager.LoadScene(2);
         _currentEra = newEra;
         foreach (var obj in Object.FindObjectsOfType<ChangeOnTimeShift>())
             obj.OnTimeShift();
@@ -22,6 +25,7 @@ public class TimeShifter
 
 public enum Era
 {
+    EndScene =-1,
     Egypt = 0,
     Renaissance = 1,
     Samourai = 2,

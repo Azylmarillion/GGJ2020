@@ -19,7 +19,7 @@ public class FolderIcon: ChangeOnTimeShift
     [SerializeField] private List<string> _txtRenaissanceContent = null;
     [SerializeField] private List<string> _txtSamouraiContent = null;
     [SerializeField] private List<string> _txtHackermanContent = null;
-    [SerializeField] private bool containPasswordExe = false;
+    [SerializeField] private List<bool> containPasswordExe = null;
 
     private List<List<Sprite>> _imgContent = null;
     private List<List<string>> _txtContent = null;
@@ -89,7 +89,7 @@ public class FolderIcon: ChangeOnTimeShift
         }
 
         //Place password icon
-        if (containPasswordExe)
+        if (containPasswordExe[TimeShifter.era]) 
         {
             PasswordIcon iconInstance = Instantiate(_passwordIconPrefab, instance.transform);
             RectTransform iconRect = iconInstance.GetComponent<RectTransform>();

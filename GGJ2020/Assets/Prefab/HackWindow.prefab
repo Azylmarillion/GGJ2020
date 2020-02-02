@@ -16,22 +16,7 @@ MonoBehaviour:
   _fontSize: {fileID: 11400000, guid: e6ca2b2acd9c85640b3896ce84293f19, type: 2}
   _idxStep: 20
   successPercentage: 0.75
---- !u!114 &2770760640651418076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5901206350525001725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33cde59333e7bce4ba7ddf3cdf6559fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _fonts: {fileID: 11400000, guid: 532ec44138687fd41afb3ce3f8e41550, type: 2}
-  _fontSize: {fileID: 11400000, guid: e6ca2b2acd9c85640b3896ce84293f19, type: 2}
-  _idxStep: 10
-  successPercentage: 0.7
+  _hackText: {fileID: 4900000, guid: 2388e01aa659cf34e908448d0207d544, type: 3}
 --- !u!1001 &5043008943955428005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -201,12 +186,6 @@ PrefabInstance:
 --- !u!1 &3103269845797501572 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7993144496754014241, guid: e3319d21252ec8744b94cfaedda92323,
-    type: 3}
-  m_PrefabInstance: {fileID: 5043008943955428005}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5901206350525001725 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1448212956021435736, guid: e3319d21252ec8744b94cfaedda92323,
     type: 3}
   m_PrefabInstance: {fileID: 5043008943955428005}
   m_PrefabAsset: {fileID: 0}
