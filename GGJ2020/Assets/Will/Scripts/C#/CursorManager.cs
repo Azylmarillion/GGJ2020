@@ -19,7 +19,7 @@ public class CursorManager : ChangeOnTimeShift
             Debug.Log("need pointersCollection script");
             return;
         }
-            Cursor.SetCursor(pointerSpritesCollection.list[TimeShifter.era], Vector2.zero, CursorMode.ForceSoftware);
+            Cursor.SetCursor(pointerSpritesCollection.list[TimeShifter.era], Vector2.zero, CursorMode.Auto);
         
     }
     #endregion
