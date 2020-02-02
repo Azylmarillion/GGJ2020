@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8c1d1addc8f374da2a255083060a35, type: 3}
+  m_Name: music
+  m_EditorClassIdentifier: 
+  _egyptIntro: {fileID: 0}
+  _egyptMain: {fileID: 0}
+  _renaissanceIntro: {fileID: 0}
+  _renaissanceMain: {fileID: 0}
+  _samouraiIntro: {fileID: 8300000, guid: 59c766c22edeb794cbc378214959d84f, type: 3}
+  _samouraiMain: {fileID: 8300000, guid: cbfeda0034390a644a0cacc365b60b2d, type: 3}
+  _hackermanIntro: {fileID: 0}
+  _hackermanMain: {fileID: 0}

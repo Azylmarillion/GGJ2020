@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 032418f9472038442b44374b3d0f9eef, type: 3}
   m_Name: closeSound
   m_EditorClassIdentifier: 
-  _egypt: {fileID: 0}
+  _egypt: {fileID: 8300000, guid: 417df99c67e044a478d354c4f6508bb6, type: 3}
   _pitchEgypt: {x: 0.85, y: 1.15}
   _volumeEgypt: {x: 0.9, y: 1}
-  _renaissance: {fileID: 0}
+  _renaissance: {fileID: 8300000, guid: 456b5c7c1e3bcb146969f2d22643b261, type: 3}
   _pitchRenaissance: {x: 0.85, y: 1.15}
   _volumeRenaissance: {x: 0.9, y: 1}
-  _samourai: {fileID: 0}
-  _pitchSamourai: {x: 0.85, y: 1.15}
+  _samourai: {fileID: 8300000, guid: 67c491d65b7cd3149993083862440e7b, type: 3}
+  _pitchSamourai: {x: 0.9, y: 1.15}
   _volumeSamourai: {x: 0.9, y: 1}
-  _hackerman: {fileID: 0}
+  _hackerman: {fileID: 8300000, guid: f05f4f3019c760940ab7b661c450e10a, type: 3}
   _pitchHackerman: {x: 0.85, y: 1.15}
   _volumeHackerman: {x: 0.9, y: 1}

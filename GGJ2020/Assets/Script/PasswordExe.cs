@@ -9,6 +9,7 @@ public class PasswordExe : MonoBehaviour
     [SerializeField] private PasswordCollection _passwords = null;
     [SerializeField] private FontsCollection _fonts = null;
     [SerializeField] private FontSizeCollection _fontSize = null;
+    [SerializeField] private HackTime _hackWindowPrefab = null;
 
     private TMP_InputField _inputField;
     private string _currentTyping;
@@ -38,8 +39,8 @@ public class PasswordExe : MonoBehaviour
             Destroy(gameObject);
         }
         else
-        { 
-            FindObjectOfType<GameManager>().ChangeEra(TimeShifter.era - 1);
+        {
+            Instantiate(_hackWindowPrefab, transform.parent);
         }
     }
 }
