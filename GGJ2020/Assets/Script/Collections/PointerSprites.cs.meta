@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - _egypt: {instanceID: 0}
-  - _renaissance: {fileID: 2800000, guid: 3992cacd90053fc4dbfc354af4ea9441, type: 3}
+  - _renaissance: {instanceID: 0}
   - _samourai: {instanceID: 0}
   - _hackerman: {instanceID: 0}
   executionOrder: 0
