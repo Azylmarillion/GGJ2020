@@ -3,7 +3,11 @@ guid: 1013027d9bc926746ac039822c7ab10a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _egypt: {instanceID: 0}
+  - _renaissance: {fileID: 2800000, guid: 3992cacd90053fc4dbfc354af4ea9441, type: 3}
+  - _samourai: {instanceID: 0}
+  - _hackerman: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

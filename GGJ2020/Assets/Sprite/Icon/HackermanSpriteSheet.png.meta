@@ -37,7 +37,7 @@ TextureImporter:
     second: hackermanWebIcon
   - first:
       213: 8828283784542409286
-    second: hackermanPointerIcon
+    second: hackermanPointer
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -239,7 +239,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hackermanPointerIcon
+      name: hackermanPointer
       rect:
         serializedVersion: 2
         x: 836
