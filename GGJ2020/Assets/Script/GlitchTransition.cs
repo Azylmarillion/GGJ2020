@@ -9,7 +9,7 @@ public class GlitchTransition : MonoBehaviour
 
     internal void Glitch()
     {
-        GetComponent<Animator>().SetTrigger("glith");
+        GetComponent<Animator>().SetTrigger("glith"); 
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.clip = _glitchSound;
         audioSource.loop = false;
