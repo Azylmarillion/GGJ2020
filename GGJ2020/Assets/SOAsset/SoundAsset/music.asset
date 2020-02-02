@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _egyptIntro: {fileID: 8300000, guid: f044ea5884357d44eb7aa9e6d3b59000, type: 3}
   _egyptMain: {fileID: 8300000, guid: 2e4872a05bad2014795b62485fb8a89b, type: 3}
-  _egyptVolume: 1
+  _egyptVolume: 0.625
   _renaissanceIntro: {fileID: 8300000, guid: ada74e54de5189447baaead981edd605, type: 3}
   _renaissanceMain: {fileID: 8300000, guid: 6de89570bad8fab4f906485d1bbf9f25, type: 3}
   _renaissanceVolume: 1
