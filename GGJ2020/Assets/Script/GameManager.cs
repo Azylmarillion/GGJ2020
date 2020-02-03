@@ -30,10 +30,8 @@ public class GameManager : MonoBehaviour
 
     void LeaveGame()
     {
-        Debug.Log("here2");
         if (Input.GetKeyDown(KeyCode.Escape) && Input.GetKeyDown(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.LeftControl))
         {
-            Debug.Log("leaving");
             Application.Quit();
         }
     }
@@ -47,6 +45,5 @@ public class GameManager : MonoBehaviour
     {
         BackToMainMenu();
         LeaveGame();
-        Debug.Log("here");
     }
 }
