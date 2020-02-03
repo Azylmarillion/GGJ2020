@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,18 +20,33 @@ public class GameManager : MonoBehaviour
         timeShifter.ChangeEra((Era)newEra);
     }
 
+    void BackToMainMenu()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
+
+    void LeaveGame()
+    {
+        Debug.Log("here2");
+        if (Input.GetKeyDown(KeyCode.Escape) && Input.GetKeyDown(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Debug.Log("leaving");
+            Application.Quit();
+        }
+    }
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-            Application.Quit();
-        /*if (Input.GetKeyDown(KeyCode.Alpha1))
-            ChangeEra(0);
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-            ChangeEra(1);
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-            ChangeEra(2);
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-            ChangeEra(3);*/
+        BackToMainMenu();
+        LeaveGame();
+        Debug.Log("here");
     }
 }
