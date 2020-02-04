@@ -4,7 +4,22 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private TimeShifter timeShifter;
-    
+
+    static GameManager instance;
+
+    public static GameManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<GameManager>();
+            }
+
+            return instance;
+        }
+    }
+
     void Start()
     {
         timeShifter = new TimeShifter();
@@ -38,10 +53,17 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        
+        DontDestroyOnLoad(gameObject);
     }
 
-    private void Update()
+    void OnDestroy()
+    {
+        if (instance = this)
+            instance = null;
+    }
+
+    void Update()
     {
         BackToMainMenu();
         LeaveGame();

@@ -125,9 +125,6 @@ public class FolderIcon: ChangeOnTimeShift
 
             currentIcon++;
         }
-
-
-
     }
 }
 

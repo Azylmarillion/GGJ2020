@@ -18,16 +18,14 @@ public class TimeShifter
         _currentEra = newEra;
         foreach (var obj in Object.FindObjectsOfType<ChangeOnTimeShift>())
             obj.OnTimeShift();
-    }
-
-    
+    }    
 }
 
 public enum Era
 {
-    EndScene =-1,
+    EndScene = -1,
     Egypt = 0,
     Renaissance = 1,
     Samourai = 2,
-    Hackerman = 3
+    Hackerman = 3    
 }

@@ -20,8 +20,6 @@ public class Wallpaper : ChangeOnTimeShift
     {
         attachedImage = GetComponent<Image>();
         //Scale image
-        attachedImage.GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.height * 4/3, Screen.height);
-    }
-
-    
+        //attachedImage.GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.height * 4/3, Screen.height);
+    }    
 }

@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class PlayButton : MonoBehaviour
 {
-    [SerializeField] float deltaPulse = 0;
-
+    [SerializeField]
+    float deltaPulse = 0;
     private AudioSource _audioSource;
+
     private Image _playImg;
 
     private void Start()
