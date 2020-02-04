@@ -266,10 +266,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 600, y: 600}
+  m_AnchorMin: {x: 0, y: 0.12100001}
+  m_AnchorMax: {x: 1, y: 0.84631485}
+  m_AnchoredPosition: {x: 0.5, y: 17}
+  m_SizeDelta: {x: -791, y: -156}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7993144496754014245
 CanvasRenderer:
@@ -436,11 +436,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7993144496754014246}
     m_Modifications:
-    - target: {fileID: 1280597325775716575, guid: a5078fa125533d74f99650d087020389,
-        type: 3}
-      propertyPath: m_Name
-      value: CloseButton
-      objectReference: {fileID: 0}
     - target: {fileID: 1280597325775716572, guid: a5078fa125533d74f99650d087020389,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -552,6 +547,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6031556992142742322, guid: c338fc168995ccb4d952fccb8e3a8c56,
         type: 3}
+    - target: {fileID: 1280597325775716575, guid: a5078fa125533d74f99650d087020389,
+        type: 3}
+      propertyPath: m_Name
+      value: CloseButton
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5078fa125533d74f99650d087020389, type: 3}
 --- !u!224 &7993144495888834412 stripped
