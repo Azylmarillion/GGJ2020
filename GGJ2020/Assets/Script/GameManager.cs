@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -63,39 +64,6 @@ public class GameManager : MonoBehaviour
             float _widthRatio = 1 / _heightRatio;
             Camera.main.rect = new Rect((1 - _widthRatio) / 2, 0, _widthRatio, 1);
         }
-
-        //float _targetaspect = 4f / 3f;
-
-        //float _windowaspect = Screen.width / Screen.height;
-
-        //float _scaleheight = _windowaspect / _targetaspect;
-
-        //Camera _camera = Camera.main;
-
-        //if (_scaleheight < 1.0f)
-        //{
-        //    Rect rect = _camera.rect;
-
-        //    rect.width = 1.0f;
-        //    rect.height = _scaleheight;
-        //    rect.x = 0;
-        //    rect.y = (1.0f - _scaleheight) / 2.0f;
-
-        //    _camera.rect = rect;
-        //}
-        //else
-        //{
-        //    float scalewidth = 1.0f / _scaleheight;
-
-        //    Rect rect = _camera.rect;
-
-        //    rect.width = scalewidth;
-        //    rect.height = 1.0f;
-        //    rect.x = (1.0f - scalewidth) / 2.0f;
-        //    rect.y = 0;
-
-        //    _camera.rect = rect;
-        //}
     }
 
     void SetScreenResolution(Scene _scene, LoadSceneMode _mode)

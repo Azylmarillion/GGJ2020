@@ -1,23 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Window : ChangeOnTimeShift
 {
-    [SerializeField] private WindowSprites _sprites = null;
-
-    private void Start()
-    {
-        GetComponent<Image>().sprite = _sprites.list[TimeShifter.era];
-        PlaceWindowRandomly();
-        GetComponent<SoundRandomiser>().Play();
-    }
+    [SerializeField] 
+        WindowSprites _sprites = null;
+    Canvas canvas = null;
+    
 
     private void PlaceWindowRandomly()
     {
-        int screenWidth = Screen.width;
-        int screenHeight = Screen.height;
+        float screenWidth = canvas.pixelRect.width;
+        float screenHeight = canvas.pixelRect.height;
 
         Rect rect = GetComponent<RectTransform>().rect;
         float horPos = Random.Range(-screenWidth / 2 + rect.width / 2, screenWidth / 2 - rect.width / 2);
@@ -29,5 +23,13 @@ public class Window : ChangeOnTimeShift
     public override void OnTimeShift()
     {
         Destroy(gameObject);
+    }
+
+    private void Start()
+    {
+        canvas = FindObjectOfType<Canvas>();
+        GetComponent<Image>().sprite = _sprites.list[TimeShifter.era];
+        PlaceWindowRandomly();
+        GetComponent<SoundRandomiser>().Play();
     }
 }
