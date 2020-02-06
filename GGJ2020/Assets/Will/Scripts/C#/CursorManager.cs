@@ -23,11 +23,5 @@ public class CursorManager : ChangeOnTimeShift
         
     }
     #endregion
-    #region UnityMeths.
-    void Start()
-    {        
-        
-    }
-    #endregion
     #endregion
 }

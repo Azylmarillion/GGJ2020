@@ -8,16 +8,25 @@ public class Window : ChangeOnTimeShift
     Canvas canvas = null;
     
 
-    private void PlaceWindowRandomly()
+    void PlaceWindowRandomly()
     {
-        float screenWidth = canvas.pixelRect.width;
-        float screenHeight = canvas.pixelRect.height;
+        float _canvasWidth = canvas.pixelRect.width;
+        float _canvasHeight = canvas.pixelRect.height;
 
         Rect rect = GetComponent<RectTransform>().rect;
-        float horPos = Random.Range(-screenWidth / 2 + rect.width / 2, screenWidth / 2 - rect.width / 2);
-        float vertPos = Random.Range(-screenHeight / 2 + rect.height / 2, screenHeight / 2 - rect.height / 2);
+        float horPos = Random.Range(-_canvasWidth / 2 + rect.width / 2, _canvasWidth / 2 - rect.width / 2);
+        float vertPos = Random.Range(-_canvasHeight / 2 + rect.height / 2, _canvasHeight / 2 - rect.height / 2);
 
         GetComponent<RectTransform>().localPosition = new Vector3(horPos, vertPos, 0);
+    }
+
+    void MakeItGlow()
+    {
+        /*
+         * if enum era == hackermantime 
+         * load glow material + script neoneditor
+         * set param neon editor color  + pulse
+         */
     }
 
     public override void OnTimeShift()
@@ -25,7 +34,7 @@ public class Window : ChangeOnTimeShift
         Destroy(gameObject);
     }
 
-    private void Start()
+    void Start()
     {
         canvas = FindObjectOfType<Canvas>();
         GetComponent<Image>().sprite = _sprites.list[TimeShifter.era];
