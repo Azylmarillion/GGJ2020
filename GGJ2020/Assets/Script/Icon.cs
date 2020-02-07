@@ -15,7 +15,7 @@ public class Icon : ChangeOnTimeShift
 
     private void Start()
     {
-        GetComponent<Image>().sprite = _sprites.list[TimeShifter.era];
+        GetComponent<Image>().sprite = _sprites.list[TimeShifter.CurrentEra];
     }
 
     public void SetAttachedSprite(Sprite toAttach)
@@ -54,8 +54,8 @@ public class Icon : ChangeOnTimeShift
                 instance.GetComponent<RectTransform>().rect.width * scale,
                 instance.GetComponent<RectTransform>().rect.height * scale);
             txt.text = associatedText;
-            txt.font = _fonts.list[TimeShifter.era];
-            txt.fontSize = _fontSizes.list[TimeShifter.era];
+            txt.font = _fonts.list[TimeShifter.CurrentEra];
+            txt.fontSize = _fontSizes.list[TimeShifter.CurrentEra];
         }
     }
 

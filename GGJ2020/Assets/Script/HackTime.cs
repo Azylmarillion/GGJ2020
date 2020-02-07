@@ -26,8 +26,8 @@ public class HackTime : ChangeOnTimeShift
     private void Start()
     {
         text = GetComponentInChildren<TextMeshProUGUI>();
-        text.font = _fonts.list[TimeShifter.era];
-        text.fontSize = _fontSize.list[TimeShifter.era];
+        text.font = _fonts.list[TimeShifter.CurrentEra];
+        text.fontSize = _fontSize.list[TimeShifter.CurrentEra];
         currentIdx = 0;
         desiredIdx = 0;
         maxIdx = _hackText.text.Length - 10;

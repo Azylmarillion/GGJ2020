@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 [ExecuteAlways]
 #pragma warning disable 0649
-public class EditorNeon : MonoBehaviour
+public class EditorNeonWindows : MonoBehaviour
 {
     #region F/P
     [SerializeField, Space]
@@ -13,10 +13,10 @@ public class EditorNeon : MonoBehaviour
     bool enableGlow = true;
 
     [SerializeField, Space]
-    Color firstColor = Color.white;
+    Color firstColor = new Color(0, .09f, 1, 1);
 
     [SerializeField, Range(0, 3), Space]
-    float firstGlowIntensity = 1.0f;
+    float firstGlowIntensity = .7f;
 
     [SerializeField, Space]
     bool enablePulseFirstGlow = false;
@@ -25,22 +25,22 @@ public class EditorNeon : MonoBehaviour
     float maxPulseIntensityFirstGlow;
 
     [SerializeField, Space]
-    Color secondColor = Color.white;
+    Color secondColor = new Color(0, .9f, 1, 1);
 
     [SerializeField, Range(0, 3), Space]
     float secondGlowIntensity = 1.0f;
 
     [SerializeField, Space]
-    bool enablePulseSecondGlow = false;
+    bool enablePulseSecondGlow = true;
     
     [SerializeField, Range(0, 3), Space]
-    float maxPulseIntensitySecondGlow;
+    float maxPulseIntensitySecondGlow = 3;
 
     [SerializeField, Range(0, 3), Space]
-    float speedPulse = 1.5f;
+    float speedPulse = 3f;
 
     [SerializeField, Range(0, 1), Space]
-    float colorBlend = 0f;    
+    float colorBlend = 1f;    
     
     Material newMat, oldMat;
     #endregion

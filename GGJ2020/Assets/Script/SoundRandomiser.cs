@@ -8,7 +8,7 @@ public class SoundRandomiser : MonoBehaviour
 
 
     public AudioSource _source { get; private set; }
-    private int era => TimeShifter.era;
+    private int era => TimeShifter.CurrentEra;
 
     private void Start()
     {

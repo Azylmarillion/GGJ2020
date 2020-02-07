@@ -15,7 +15,7 @@ public class MusicManager : ChangeOnTimeShift
 
         _audioSource.Pause();
 
-        if(_music.intro[TimeShifter.era] != null)
+        if(_music.intro[TimeShifter.CurrentEra] != null)
             PlayIntro();            
         else
             PlayMain();
@@ -23,16 +23,16 @@ public class MusicManager : ChangeOnTimeShift
 
     private void PlayMain()
     {
-        _audioSource.clip = _music.main[TimeShifter.era];
-        _audioSource.volume = _music.volume[TimeShifter.era];
+        _audioSource.clip = _music.main[TimeShifter.CurrentEra];
+        _audioSource.volume = _music.volume[TimeShifter.CurrentEra];
         _audioSource.loop = true;
         _audioSource.Play();
     }
 
     private void PlayIntro()
     {
-        _audioSource.clip = _music.intro[TimeShifter.era];
-        _audioSource.volume = _music.volume[TimeShifter.era];
+        _audioSource.clip = _music.intro[TimeShifter.CurrentEra];
+        _audioSource.volume = _music.volume[TimeShifter.CurrentEra];
         _audioSource.loop = false;
         _audioSource.Play();
         StartCoroutine(WaitForEndOfIntro());

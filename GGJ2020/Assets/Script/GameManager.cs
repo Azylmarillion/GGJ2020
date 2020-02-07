@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeEra()
     {
-        timeShifter.ChangeEra((Era)(TimeShifter.era - 1));
+        timeShifter.ChangeEra((Era)(TimeShifter.CurrentEra - 1));
     }
 
     public void ChangeEra(int newEra)

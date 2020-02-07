@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,17 +21,43 @@ public class FolderIcon: ChangeOnTimeShift
     [SerializeField] private List<bool> containPasswordExe = null;
     [SerializeField] private bool containWebIcon = false;
 
+    EditorNeonFolder scriptNeonloaded = null;
+    Image image = null;
+    Material defaultMaterial = null;
+
     private List<List<Sprite>> _imgContent = null;
     private List<List<string>> _txtContent = null;
 
 
+    void MakeItGlow()
+    {
+        image.material = Resources.Load<Material>("MAAT_Glow");
+        image.gameObject.AddComponent<EditorNeonFolder>();
+    }
+
     public override void OnTimeShift()
     {
-        GetComponent<Image>().sprite = _folderSprites.list[TimeShifter.era];
+        GetComponent<Image>().sprite = _folderSprites.list[TimeShifter.CurrentEra];        
+
+        if (TimeShifter.CurrentEra == (int)Era.Hackerman)
+        {
+            MakeItGlow();
+        }
+        else
+        {
+            if (image.GetComponent<EditorNeonFolder>())
+            {
+                //Destroy(scriptNeonloaded.gameObject);
+                image.material = defaultMaterial;
+            }
+        }
     }
 
     public void Awake()
     {
+        image = GetComponent<Image>();
+        defaultMaterial = image.material;
+
         _imgContent = new List<List<Sprite>>()
                 { _imgEgyptContent, _imgRenaissanceContent, _imgSamouraiContent, _imgHackermanContent };
         _txtContent = new List<List<string>>()
@@ -51,7 +75,7 @@ public class FolderIcon: ChangeOnTimeShift
         int currentIcon = 0;
 
         //Place img icon
-        for (int i = 0; i < _imgContent[TimeShifter.era].Count; i++)
+        for (int i = 0; i < _imgContent[TimeShifter.CurrentEra].Count; i++)
         {          
             Icon iconInstance = Instantiate(_imgIconPrefab, instance.transform);
             RectTransform iconRect = iconInstance.GetComponent<RectTransform>();
@@ -65,13 +89,13 @@ public class FolderIcon: ChangeOnTimeShift
                     0); 
             iconRect.localPosition = spawnPos;
 
-            iconInstance.SetAttachedSprite(_imgContent[TimeShifter.era][i]);
+            iconInstance.SetAttachedSprite(_imgContent[TimeShifter.CurrentEra][i]);
 
-            currentIcon++;
+            currentIcon++;            
         }
         
         //Place txt icon
-        for (int i = 0; i < _txtContent[TimeShifter.era].Count; i++)
+        for (int i = 0; i < _txtContent[TimeShifter.CurrentEra].Count; i++)
         {
             Icon iconInstance = Instantiate(_txtIconPrefab, instance.transform);
             RectTransform iconRect = iconInstance.GetComponent<RectTransform>();
@@ -85,13 +109,13 @@ public class FolderIcon: ChangeOnTimeShift
                     0);
             iconRect.localPosition = spawnPos;
 
-            iconInstance.SetAttachedText(_txtContent[TimeShifter.era][i]);
+            iconInstance.SetAttachedText(_txtContent[TimeShifter.CurrentEra][i]);
 
             currentIcon++;
         }
 
         //Place password icon
-        if (containPasswordExe[TimeShifter.era]) 
+        if (containPasswordExe[TimeShifter.CurrentEra]) 
         {
             PasswordIcon iconInstance = Instantiate(_passwordIconPrefab, instance.transform);
             RectTransform iconRect = iconInstance.GetComponent<RectTransform>();

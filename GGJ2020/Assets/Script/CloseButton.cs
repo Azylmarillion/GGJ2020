@@ -10,7 +10,7 @@ public class CloseButton : MonoBehaviour
 
     public void Start()
     {
-        GetComponent<Image>().sprite = _sprites.list[TimeShifter.era];
+        GetComponent<Image>().sprite = _sprites.list[TimeShifter.CurrentEra];
         PlaceCloseButton();
     }
 

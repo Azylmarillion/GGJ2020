@@ -13,7 +13,7 @@ public class Wallpaper : ChangeOnTimeShift
     {
         if(attachedImage == null)
             attachedImage = GetComponent<Image>();
-        attachedImage.sprite = _sprites.list[TimeShifter.era];
+        attachedImage.sprite = _sprites.list[TimeShifter.CurrentEra];
     }
 
     void Start()

@@ -4,7 +4,13 @@ using UnityEngine.SceneManagement;
 public class TimeShifter
 {
     private static Era _currentEra;
-    public static int era => (int)_currentEra;
+    public static int CurrentEra
+    {
+        get
+        {
+            return (int)_currentEra;
+        }
+    }
 
     public TimeShifter()
     {

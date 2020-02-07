@@ -19,8 +19,8 @@ public class PasswordExe : MonoBehaviour
         TextMeshProUGUI[] texts = GetComponentsInChildren<TextMeshProUGUI>();
         foreach (var text in texts)
         {
-            text.font = _fonts.list[TimeShifter.era];
-            text.fontSize = _fontSize.list[TimeShifter.era];
+            text.font = _fonts.list[TimeShifter.CurrentEra];
+            text.fontSize = _fontSize.list[TimeShifter.CurrentEra];
         }
         _inputField = GetComponentInChildren<TMP_InputField>();
     }
@@ -34,7 +34,7 @@ public class PasswordExe : MonoBehaviour
         if (!Input.GetKeyDown(KeyCode.Return))
             return;
 
-        if(_inputField.text != _passwords.list[TimeShifter.era])
+        if(_inputField.text != _passwords.list[TimeShifter.CurrentEra])
         {
             Destroy(gameObject);
         }

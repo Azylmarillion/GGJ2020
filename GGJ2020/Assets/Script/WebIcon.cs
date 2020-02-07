@@ -11,19 +11,19 @@ public class WebIcon : MonoBehaviour
 
     private void Start()
     {
-        if (TimeShifter.era != (int)Era.Renaissance && TimeShifter.era != (int)Era.Hackerman)
+        if (TimeShifter.CurrentEra != (int)Era.Renaissance && TimeShifter.CurrentEra != (int)Era.Hackerman)
             Destroy(gameObject);
         _audioSource = GetComponent<SoundRandomiser>();
-        GetComponent<Image>().sprite = _icons.list[TimeShifter.era];
+        GetComponent<Image>().sprite = _icons.list[TimeShifter.CurrentEra];
     }
 
     public void OnClick()
     {
-        if(TimeShifter.era == (int)Era.Renaissance)
+        if(TimeShifter.CurrentEra == (int)Era.Renaissance)
         {
             _audioSource.Play();
         }
-        if (TimeShifter.era == (int)Era.Hackerman)
+        if (TimeShifter.CurrentEra == (int)Era.Hackerman)
         {
             Window instance = Instantiate(_windowPrefab, transform.parent.parent);
             Image img = instance.transform.GetChild(0).GetComponent<Image>();
